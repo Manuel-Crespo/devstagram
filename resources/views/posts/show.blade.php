@@ -69,9 +69,8 @@
                             <label for="comentario" class="mb-2 block uppercase text-gray-500 font-bold">
                                 Añade un Comentario
                             </label>
-                            <textarea id="comentario" name="comentario" placeholder="Agrega un Comentario" class="border p-3 w-full rounded-lg
-                                @error('name') border-red-500 @enderror">
-                            </textarea>
+                            <textarea id="comentario" name="comentario" placeholder="Agrega un Comentario" class="border p-3 w-full rounded-lg" 
+                            @error('name') border-red-500 @enderror></textarea>
                             @error('comentario')
                                 <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">
                                     {{ $message }}
